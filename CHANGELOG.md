@@ -1,0 +1,4 @@
+- `0.1.0` (June 28, 2022)
+  - First tag
+  - Implements bare-bones API similar to https://deno.land/x/bplist_parser
+  - Installable `ichat_json` script for parsing from the command line
