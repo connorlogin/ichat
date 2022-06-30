@@ -417,7 +417,8 @@ export function parseFileSync(
 
 /** Parses a macOS *.ichat Uint8Array into a Deno-friendly format. */
 export function parseBuffer(buf: Uint8Array): Message[] {
-  return parse(buf);
+  const data = bplist.parseBuffer(buf);
+  return parse(data);
 }
 
 function parse(data: unknown) {
